@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@font-face {
+  font-family: bubble;
+  src: url("../assets/fonts/Atop-R99O3.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(96, 98, 238);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headerText {
+  font-family: bubble;
+  font-size: 80px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.btnText {
+  font-size: 18px;
+  color: white;
+}
+
+.btn.active {
+  background-color: white;
+  color: black;
+}
+
+.formSection {
+  width: 80%;
+}
+
+.loginBox,
+.signupBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submitBtn {
+  height: 50px;
+  background-color: rgb(110, 211, 255);
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  display: flex;
+  cursor: pointer;
+}
+
+.submitText {
+  color: white;
+  font-size: 18px;
+}
