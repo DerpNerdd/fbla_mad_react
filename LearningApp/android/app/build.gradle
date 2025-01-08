@@ -105,6 +105,25 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    externalNativeBuild {
+        cmake {
+            // If you installed a specific version of CMake outside the SDK,
+            // you can tell Gradle which version to use:
+            version "3.31.3"
+
+            // Replace "CMakeLists.txt" with the path to your actual CMakeLists file if needed
+            path file("CMakeLists.txt")
+
+            // Force the generator to be MinGW Makefiles instead of Ninja
+            // (if you’re on Windows and using MinGW)
+            arguments "-GMinGW Makefiles",
+
+                     // Optionally, tell CMake exactly where to find make.exe.
+                     // Make sure to replace this with the actual path on your machine.
+                     "-DCMAKE_MAKE_PROGRAM=C:/Users/asanch317/Downloads/cmake-3.31.3/cmake-3.31.3/bin/make.exe"
+        }
+    }
+    }
 }
 
 dependencies {
