@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "server": "npx nodemon backend/index.js",
-    "client": "cd LearningApp && npx react-native run-android",
+    "client": "cd LearningApp && npx react-native start",
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
